@@ -1,0 +1,6 @@
+kind: "DevWorkspace"
+apiVersion: "workspace.devfile.io/v1alpha2"
+metadata:
+  name: started-devworkspace
+spec:
+  started: true

@@ -1,0 +1,12 @@
+domain: workspace.devfile.io
+layout:
+- quarkus.javaoperatorsdk.io/v1-alpha
+projectName: jdevspace
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: workspace.devfile.io
+  kind: DevWorkspace
+  version: v1alpha1
+version: "3"

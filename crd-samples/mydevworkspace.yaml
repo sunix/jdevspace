@@ -1,0 +1,15 @@
+kind: "DevWorkspace"
+apiVersion: "workspace.devfile.io/v1alpha2"
+metadata:
+  name: mydevworkspace
+spec:
+  started: true
+  routingClass: 'openshift-auth'
+  template:
+    projects:
+      - name: "devworkspace-spec"
+        git:
+          remotes:
+            origin: "https://github.com/che-incubator/devworkspace-api"
+          checkoutFrom:
+            revision: "master"
